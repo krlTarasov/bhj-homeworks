@@ -5,7 +5,11 @@ for (const elem of subMenuList) {
     console.log(elem);
     parent.onclick = () => {
         console.log(elem);
-        elem.className = 'menu menu_sub menu_active';
+        if (elem.className == 'menu menu_sub') {
+            elem.className = 'menu menu_sub menu_active';
+        } else {
+            elem.className = 'menu menu_sub';
+        }
         return false;
     }
 }

@@ -7,3 +7,9 @@ nextButton.onclick = () => {
     sliderItemsList.item(i % 5).className = 'slider__item';
     sliderItemsList.item((++i) % 5).className = 'slider__item slider__item_active';
 }
+
+prevButton.onclick = () => {
+    if (i <= 0) i = 5;
+    sliderItemsList.item(i % 5).className = 'slider__item';
+    sliderItemsList.item((--i) % 5).className = 'slider__item slider__item_active';
+}

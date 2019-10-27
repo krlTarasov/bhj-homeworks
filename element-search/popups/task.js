@@ -15,5 +15,6 @@ successCloseButton.onclick = () => {
 }
 
 showSucces.onclick = () => {
+    popup.className = 'modal';
     modalSuccess.className = 'modal modal_active';
 }
